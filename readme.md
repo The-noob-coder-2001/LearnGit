@@ -1,2 +1,3 @@
 #MyApp
-this is my test app
+this is my test app.
+Git and Github
