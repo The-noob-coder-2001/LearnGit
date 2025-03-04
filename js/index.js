@@ -31,3 +31,8 @@ function sleep() {
   console.log("I'm sleeping...");
 }
 timeout(sleep, 10);
+
+// create a function that takes a callback function as an argument and executes it after a specified time
+function delay(callback, time) {
+  setTimeout(callback, time);
+}
