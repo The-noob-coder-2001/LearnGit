@@ -1,0 +1,37 @@
+/* these are bulb properties */
+#bulb {
+    width: 400px;
+    height: 400px;
+    background-color: #000;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 0 0 10px 10px #000;
+}
+
+/* clickable button properties */
+button {
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 100px;
+    height: 50px;
+    background-color: #919191;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* properties for heading tag */
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+/* properties for bold tag */
+h2 b {
+    color: green
+}
