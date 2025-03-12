@@ -8,19 +8,42 @@ const bulb = document.getElementById("bulb");
 const heading = document.querySelector("h2");
 const button = document.querySelector("button");
 
-button.addEventListener("click", () => {
-  if (button.innerHTML === "ON") {
+// here are two functions that are required to turn on and off the bulb
+function ON() {
+  heading.innerHTML = "Click the button to turn ON the bulb";
+
+  button.addEventListener("click", () => {
+    bulb.style.backgroundColor = "yellow";
+    button.innerHTML = "ON";
     heading.innerHTML = "Click the button to turn OFF the bulb";
-    button.addEventListener("click", () => {
-      bulb.style.backgroundColor = "black";
-      button.innerHTML = "OFF";
-      heading.innerHTML = "Click the button to turn ON the bulb";
-    });
-  } else {
+  });
+
+  return "ON";
+}
+
+function OFF() {
+  heading.innerHTML = "Click the button to turn OFF the bulb";
+  button.addEventListener("click", () => {
     bulb.style.backgroundColor = "black";
     button.innerHTML = "OFF";
     heading.innerHTML = "Click the button to turn ON the bulb";
+  });
+
+  return "OFF";
+}
+
+// this is the main logic that checks the current state of the button
+// we need to keep this in a continuos loop so that the button can be turned on and off
+// without refreshing the page
+
+function generator(message) {
+  console.log("Generator is ON");
+  if (message === "OFF") {
+    return ON();
+  } else {
+    return OFF();
   }
-  bulb.style.backgroundColor = "yellow";
-  button.innerHTML = "ON";
-});
+}
+
+let message = "ON";
+generator(message);

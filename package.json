@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "node": "^23.9.0"
+  },
+  "name": "self_dev",
+  "version": "1.0.0",
+  "description": "This is a package that contains code with basic level of understanding of Javascript concepts",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-noob-coder-2001/LearnGit.git"
+  },
+  "author": "gouranga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-noob-coder-2001/LearnGit/issues"
+  },
+  "homepage": "https://github.com/The-noob-coder-2001/LearnGit#readme"
+}

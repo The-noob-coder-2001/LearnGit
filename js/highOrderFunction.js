@@ -18,3 +18,15 @@ function thisIsMyHighOrderFuncition(
 // time to call
 const resultAfterCallingHOF = thisIsMyHighOrderFuncition(carName, bikeName);
 console.log(resultAfterCallingHOF); // Volvo
+
+// write a callback function that takes 2 integers and returns its exponential value
+function exponentialValue(num1, num2) {
+  return num1 ** num2;
+}
+
+function callbackFunction(num1, num2, callback) {
+  return callback(num1, num2);
+}
+
+const result = callbackFunction(2, 3, exponentialValue);
+console.log(result); // 8
