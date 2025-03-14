@@ -1,5 +1,5 @@
 // it is a simple code that turns on a bulb when the switch is turned on and turns off the bulb when the switch is turned off.
-
+// this is an example of DOM-manipulation with javsascripts
 // so the logic is:
 // currently, the button is OFF. Once the user clicks the button, it says ON and bulb turn on.
 // Next, the message says: Click the button to turn OFF the bulb. Next action is predictable
